@@ -36,3 +36,53 @@ p {
   margin: 0 auto;  
 }
 
+h1 {
+  font-size: 4rem;
+}
+
+//day night help was taken 
+
+
+.night {
+  color: white;
+  transition: all 3s linear;
+  background-color: @nightColor;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Russo One", sans-serif;
+    color: white;
+  }
+
+  .header {
+    background-color: @nightColor;
+    color: black;
+    transition: all 1s linear;
+
+    nav {
+
+      a {
+        color: white;
+      }
+    }
+  }
+
+  footer {
+    background: @nightColor;
+    color: white;
+  }
+}
+
+.day {
+  background: white;
+  color: black;
+  transition: all 2s linear;
+
+  .top {
+    transition: all 2s linear;
+  }
+}
+

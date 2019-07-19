@@ -1,1 +1,37 @@
 // Mixins Here
+
+.header-font {
+    width: 100%;
+    padding: 14px 0 10px;
+    margin: 0;
+    background-color: @border-real;
+    border-bottom: 2px solid @nav-border;
+}
+
+.btnProp(@fontsize, @bg-color, @bradius, @color) {
+    font-size: @fontsize;
+    background-color: @bg-color;
+    border-radius: @bradius;
+    color: @color;
+    transition: all 0.3s linear;
+
+    &:hover {
+        background-color: white;
+        color: #696969;
+        transform: scale(1.1);
+    }
+}
+
+
+.nav-font {
+    color: @nav-font;
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.keyframes(@name; @arguments) {
+    @keyframes @name { @arguments();}
+}
+
+
